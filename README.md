@@ -11,15 +11,15 @@ A language model is an algorithm of learning (to approximate) a function capturi
 ## RNN and LSTM
 
 ### RNN (Recurrent Neural Network)
-![image](https://github.com/Junliang-liu-kit/Writing-like-Shakespeare-in-LSTM/raw/master/image/RNN1.jpg)
+![image](https://github.com/Junliang-liu-kit/Writing-like-Shakespeare-in-LSTM/raw/master/images/RNN1.jpg)
 <br>The operation of a Recurrent Neural Network learning a character-based language model. Each network step receives an input of a character in the history. The output layer of each step is a multinomial distribution of all characters in the vocabulary conditioned by the history.
 
 ### The operation of each network step
-![image](/image/RNN.jpg)
+![image](/images/RNN.jpg)
 <br>Each character is represented by an one-hot representation (`a vector with the size of the vocabulary with all zeros, only the index of the character is 1`). It is then transformed (`linearly`) to a continuous-value vector (`embedding`) which is the input to the RNN network. The output of the network is fed into the `Softmax function` to get the distribution. Finally the loss of each step is Cross-Entropy between the output distribution and the label (a character represented with `one-hot vector`).
 
 ### LSTM
-![image](/image/LSTM.jpg)
+![image](/images/LSTM.jpg)
 The LSTM is different than the simple RNN that it has two memory cells and three gate:
 * forget gate
 * update gate
