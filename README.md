@@ -30,6 +30,6 @@ The LSTM is different than the simple RNN that it has two memory cells and three
 Back-propagation implementation, in general, depends on the correctness of the gradient computation based on each step of the chain rule. It is therefore crucial
 to verify the correctness of our returned gradients from the algorithm. The most efficient way to do this is to compare our analytical gradients (obtained by backpropagation) and the numerical gradients.
 
-## Sampling. 
+## Sampling
 Since our network is a generative model we can check if it can learn properly based on trying to generate new samples. By generating new character sequences we will observe the learning progress of the network. Initially the network should generate almost random sequences, and then later on it manages to generate something that looks like the training data. The Vanilla RNN will be struggle to even generate correctly spelled words, while the LSTMs can generate more plausible
 sequences.
