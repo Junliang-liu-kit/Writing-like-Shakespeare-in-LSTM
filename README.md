@@ -11,7 +11,7 @@ A language model is an algorithm of learning (to approximate) a function capturi
 ## RNN and LSTM
 
 ### RNN (Recurrent Neural Network)
-![image](/image/RNN1.jpg)
+![image](https://github.com/Junliang-liu-kit/Writing-like-Shakespeare-in-LSTM/raw/master/image/RNN1.jpg)
 <br>The operation of a Recurrent Neural Network learning a character-based language model. Each network step receives an input of a character in the history. The output layer of each step is a multinomial distribution of all characters in the vocabulary conditioned by the history.
 
 ### The operation of each network step
