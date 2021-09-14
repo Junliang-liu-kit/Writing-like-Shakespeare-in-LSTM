@@ -24,7 +24,8 @@ The LSTM is different than the simple RNN that it has two memory cells and three
 * forget gate
 * update gate
 * output gate
-Compared to the RNN it was proposed as (one of) the solution(s) to make learning more efficient. ('GRU' is also a good solution)
+
+<br>Compared to the RNN it was proposed as (one of) the solution(s) to make learning more efficient. ('GRU' is also a good solution)
 
 ## Gradient-Checking
 Back-propagation implementation, in general, depends on the correctness of the gradient computation based on each step of the chain rule. It is therefore crucial
